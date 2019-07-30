@@ -1,0 +1,194 @@
+{
+  "entities": {
+    "dimension": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "length"
+        },
+        {
+          "synonyms": [
+            "breadth",
+            "thickness"
+          ],
+          "value": "width"
+        },
+        {
+          "synonyms": [
+            "circumference",
+            "height",
+            "diagonal"
+          ],
+          "value": "diameter"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "dimensionUnit": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "m"
+        },
+        {
+          "synonyms": [
+            "km",
+            "feet",
+            "cm"
+          ],
+          "value": "mm"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "snips/number": {},
+    "unit": {
+      "automatically_extensible": true,
+      "data": [],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "noteDimension": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Note the "
+            },
+            {
+              "entity": "dimension",
+              "slot_name": "dimension",
+              "text": "length"
+            },
+            {
+              "text": " of bottle is "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "dimensionValue",
+              "text": "10"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "unit",
+              "slot_name": "unit",
+              "text": "cm"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can you please note down the "
+            },
+            {
+              "entity": "dimension",
+              "slot_name": "dimension",
+              "text": "diameter"
+            },
+            {
+              "text": " of this cap as "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "dimensionValue",
+              "text": "40"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "unit",
+              "slot_name": "dimensionUnit",
+              "text": "feet"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "The "
+            },
+            {
+              "entity": "dimension",
+              "slot_name": "dimension",
+              "text": "breadth"
+            },
+            {
+              "text": " of this cube is "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "dimensionValue",
+              "text": "200"
+            },
+            {
+              "text": "cm"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "The "
+            },
+            {
+              "entity": "dimension",
+              "slot_name": "dimension",
+              "text": "width"
+            },
+            {
+              "text": " is "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "dimensionValue",
+              "text": "33"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "unit",
+              "slot_name": "dimensionUnit",
+              "text": "m"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "entity": "dimension",
+              "slot_name": "dimension",
+              "text": "length"
+            },
+            {
+              "text": " of this square is "
+            },
+            {
+              "entity": "snips/number",
+              "slot_name": "dimensionValue",
+              "text": "27"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "unit",
+              "slot_name": "dimensionUnit",
+              "text": "m"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

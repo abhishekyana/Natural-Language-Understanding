@@ -1,0 +1,92 @@
+{
+  "entities": {
+    "pizzaSize": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [
+            "tiny",
+            "little",
+            "for 2",
+            "mini"
+          ],
+          "value": "small"
+        },
+        {
+          "synonyms": [
+            "mid",
+            "med",
+            "average",
+            "regular"
+          ],
+          "value": "medium"
+        },
+        {
+          "synonyms": [
+            "large",
+            "giant"
+          ],
+          "value": "big"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "pizzaType": {
+      "automatically_extensible": true,
+      "data": [],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "pizaaFeat": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Order a "
+            },
+            {
+              "entity": "pizzaSize",
+              "slot_name": "pizzaSize",
+              "text": "big"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "pizzaType",
+              "slot_name": "pizzaType",
+              "text": "paneer"
+            },
+            {
+              "text": " pizza now"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Get me a pizza, "
+            },
+            {
+              "entity": "pizzaSize",
+              "slot_name": "pizzaSize",
+              "text": "small"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "pizzaType",
+              "slot_name": "pizzaType",
+              "text": "veggy pepper"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

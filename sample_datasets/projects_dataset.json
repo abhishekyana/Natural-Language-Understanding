@@ -1,0 +1,172 @@
+{
+  "entities": {
+    "projectDirectory": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [
+            "my private server"
+          ],
+          "value": "private server"
+        },
+        {
+          "synonyms": [
+            "my public server"
+          ],
+          "value": "public server"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "projectName": {
+      "automatically_extensible": true,
+      "data": [],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "projectType": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "artificial intelligence"
+        },
+        {
+          "synonyms": [
+            "deep learning",
+            "ai",
+            "ml",
+            "dl",
+            "neural networks",
+            "neural nets"
+          ],
+          "value": "machine learning"
+        },
+        {
+          "synonyms": [
+            "electronics",
+            "neuromophic"
+          ],
+          "value": "arduino"
+        },
+        {
+          "synonyms": [],
+          "value": "research"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "snips/datetime": {},
+    "toSource": {
+      "automatically_extensible": true,
+      "data": [],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "newProject": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Start a new "
+            },
+            {
+              "entity": "projectType",
+              "slot_name": "projectType",
+              "text": "machine learning"
+            },
+            {
+              "text": " project in my "
+            },
+            {
+              "entity": "projectDirectory",
+              "slot_name": "projectDirectory",
+              "text": "private server"
+            },
+            {
+              "text": " at "
+            },
+            {
+              "entity": "snips/datetime",
+              "slot_name": "instantTime",
+              "text": "time"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Create a new project with title "
+            },
+            {
+              "entity": "projectName",
+              "slot_name": "projectName",
+              "text": "Intent Recognition"
+            },
+            {
+              "text": " in my "
+            },
+            {
+              "entity": "projectDirectory",
+              "slot_name": "projectDirectory",
+              "text": "python folder"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Initiate the "
+            },
+            {
+              "entity": "projectDirectory",
+              "slot_name": "projectDirectory",
+              "text": "research server"
+            },
+            {
+              "text": " for a project named "
+            },
+            {
+              "entity": "projectName",
+              "slot_name": "projectName",
+              "text": "zeronn"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Fire up the "
+            },
+            {
+              "entity": "projectName",
+              "slot_name": "projectName",
+              "text": "Neuromophic memory"
+            },
+            {
+              "text": " code and copy the data to "
+            },
+            {
+              "entity": "toSource",
+              "slot_name": "toSource",
+              "text": "ram"
+            },
+            {
+              "text": " on "
+            },
+            {
+              "entity": "projectDirectory",
+              "slot_name": "projectDirectory",
+              "text": "my private server"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

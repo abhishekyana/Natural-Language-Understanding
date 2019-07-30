@@ -1,0 +1,468 @@
+{
+  "entities": {
+    "color": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "red"
+        },
+        {
+          "synonyms": [
+            "yellow",
+            "green",
+            "black",
+            "white",
+            "grey",
+            "pink"
+          ],
+          "value": "blue"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "direction": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "right"
+        },
+        {
+          "synonyms": [
+            "down",
+            "bottom",
+            "up",
+            "top"
+          ],
+          "value": "left"
+        },
+        {
+          "synonyms": [
+            "bottom left",
+            "bottom right",
+            "top left"
+          ],
+          "value": "top right"
+        },
+        {
+          "synonyms": [
+            "right center",
+            "top center"
+          ],
+          "value": "center"
+        },
+        {
+          "synonyms": [
+            "left corner"
+          ],
+          "value": "right corner"
+        },
+        {
+          "synonyms": [
+            "bottom right corner",
+            "bottom left corner",
+            "top right corner"
+          ],
+          "value": "top left corner"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "shape": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "square"
+        },
+        {
+          "synonyms": [
+            "circle",
+            "rectangle",
+            "oval"
+          ],
+          "value": "triangle"
+        },
+        {
+          "synonyms": [
+            "hexagon",
+            "heptagon",
+            "octagon",
+            "nanogon",
+            "decagon"
+          ],
+          "value": "pentagon"
+        },
+        {
+          "synonyms": [
+            "cuboid"
+          ],
+          "value": "cube"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "target": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "baloon"
+        },
+        {
+          "synonyms": [
+            "board",
+            "box",
+            "pillow"
+          ],
+          "value": "doll"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "aimShooter": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Aim the shooter at the "
+            },
+            {
+              "entity": "color",
+              "slot_name": "color",
+              "text": "red"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "target",
+              "slot_name": "target",
+              "text": "baloon"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Aim at "
+            },
+            {
+              "entity": "direction",
+              "slot_name": "direction",
+              "text": "right"
+            },
+            {
+              "text": " most "
+            },
+            {
+              "entity": "target",
+              "slot_name": "target",
+              "text": "doll"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Target the "
+            },
+            {
+              "entity": "direction",
+              "slot_name": "direction",
+              "text": "center"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "shape",
+              "slot_name": "shape",
+              "text": "square"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Lock the "
+            },
+            {
+              "entity": "direction",
+              "slot_name": "direction",
+              "text": "left"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "shape",
+              "slot_name": "shape",
+              "text": "circle"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Look at the "
+            },
+            {
+              "entity": "direction",
+              "slot_name": "direction",
+              "text": "bottom"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "color",
+              "slot_name": "color",
+              "text": "yellow"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "shape",
+              "slot_name": "shape",
+              "text": "cube"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Target the "
+            },
+            {
+              "entity": "direction",
+              "slot_name": "direction",
+              "text": "left"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "color",
+              "slot_name": "color",
+              "text": "blue"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "shape",
+              "slot_name": "shape",
+              "text": "square"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "target",
+              "slot_name": "target",
+              "text": "box"
+            }
+          ]
+        }
+      ]
+    },
+    "triggerShooter": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Shoot the shooter at the "
+            },
+            {
+              "entity": "color",
+              "slot_name": "color",
+              "text": "red"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "target",
+              "slot_name": "target",
+              "text": "baloon"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Shoot the "
+            },
+            {
+              "entity": "color",
+              "slot_name": "color",
+              "text": "red"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "target",
+              "slot_name": "target",
+              "text": "baloon"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Trigger the shooter at the "
+            },
+            {
+              "entity": "color",
+              "slot_name": "color",
+              "text": "red"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "target",
+              "slot_name": "target",
+              "text": "baloon"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Fire at "
+            },
+            {
+              "entity": "direction",
+              "slot_name": "direction",
+              "text": "right"
+            },
+            {
+              "text": " most "
+            },
+            {
+              "entity": "target",
+              "slot_name": "target",
+              "text": "doll"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Hit the "
+            },
+            {
+              "entity": "direction",
+              "slot_name": "direction",
+              "text": "center"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "shape",
+              "slot_name": "shape",
+              "text": "square"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Destroy the "
+            },
+            {
+              "entity": "direction",
+              "slot_name": "direction",
+              "text": "left"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "shape",
+              "slot_name": "shape",
+              "text": "circle"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Kill the "
+            },
+            {
+              "entity": "direction",
+              "slot_name": "direction",
+              "text": "bottom"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "color",
+              "slot_name": "color",
+              "text": "yellow"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "shape",
+              "slot_name": "shape",
+              "text": "cube"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Blast the "
+            },
+            {
+              "entity": "direction",
+              "slot_name": "direction",
+              "text": "left"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "color",
+              "slot_name": "color",
+              "text": "blue"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "shape",
+              "slot_name": "shape",
+              "text": "square"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "target",
+              "slot_name": "target",
+              "text": "box"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

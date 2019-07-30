@@ -1,0 +1,42 @@
+{
+  "entities": {
+    "snips/datetime": {}
+  },
+  "intents": {
+    "tellTime": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "What is the "
+            },
+            {
+              "entity": "snips/datetime",
+              "slot_name": "time",
+              "text": "time"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What "
+            },
+            {
+              "entity": "snips/datetime",
+              "slot_name": "time",
+              "text": "time"
+            },
+            {
+              "text": " is it?"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

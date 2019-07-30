@@ -1,0 +1,101 @@
+{
+  "entities": {
+    "personName": {
+      "automatically_extensible": true,
+      "data": [],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "intentName": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Hello, my name is "
+            },
+            {
+              "entity": "personName",
+              "slot_name": "personName",
+              "text": "Abhishek"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Please remember my name as "
+            },
+            {
+              "entity": "personName",
+              "slot_name": "personName",
+              "text": "Rahul"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Invite "
+            },
+            {
+              "entity": "personName",
+              "slot_name": "personName",
+              "text": "Avinash"
+            },
+            {
+              "text": " to the party"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Call "
+            },
+            {
+              "entity": "personName",
+              "slot_name": "personName",
+              "text": "Bhargava"
+            },
+            {
+              "text": " and inform the venue"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Message "
+            },
+            {
+              "entity": "personName",
+              "slot_name": "personName",
+              "text": "Narendra Modi"
+            },
+            {
+              "text": " about the innovation"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Where is "
+            },
+            {
+              "entity": "personName",
+              "slot_name": "personName",
+              "text": "Mahesh Babu"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}
